@@ -1,0 +1,53 @@
+html {
+	background-color: beige;
+}
+header {
+	text-align: center;
+	font-size: 42px;
+	font: Courier;
+	color: red;
+}
+body {
+	font-size: 22px;
+	position: absolute;
+	text-align: left;
+	color: brown;
+}
+footer {
+	text-align: left;
+}
+.navbar {
+	text-align: center;
+	display: inline;
+	font-size: 40px;
+	padding-right: 80px;
+	padding-left: 80px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+hr {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.social {
+	text-align: center;
+	display: inline;
+	font-size: 30px;
+	padding-right: 80px;
+	padding-left: 140px;
+}
+
+
+div img {
+	float: left;
+}
+.bloglink {
+	font-size: 24px;
+	position: absolute;
+	text-align: left;
+}
+table {
+	border: solid;
+	
+}
