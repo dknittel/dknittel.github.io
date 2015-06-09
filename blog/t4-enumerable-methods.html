@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+<header>
+  <title>Enumerables#map</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="your-stylesheet-link-here.css">
+</header>
+
+<main>
+  <h1>Enumerables#map</h1>
+  <h4>6/9/2015</h4>
+  <hr>
+  <section>
+    <p>
+      map is an enumerable method that takes an object and a block and runs the block once for each element in the enumerable. It then returns this as an array. If the user does not give a block, the function will return an enumerator. You can see an example of the map method as well as the collect method below:
+    </p>
+    <img src="Map_Code.png"/>
+    <p>
+      The map method is actually equivalent to collect and it is more conventional to use map. You can think of map as remapping the object by altering it in some way.
+    </p>
+    <h4>Example</h4>
+    <p>
+      To help demonstrate this, suppose we have two arrays: one called warriors_lineup that contains all of the players in the warriors lineup and one called warriors that is currently empty.
+      </p> 
+      <img src="Arrays_Code.png"/>
+      <p>
+        We want to move every player in the warriors_lineup array into the warriors array. So how do we do this? With map:
+      </p>
+      <img src="Map_Warriors_Code.png"/>
+      <p>
+        map loops through the array 5 times because of the (0..4) range, adding each element "i" to the warriors array. When we puts the warriors array, you can see that each element has been added to the array:
+      </p>
+      <img src="Map_Warriors_Print.png"/>
+      <p>
+        For more information see: <a href="http://ruby-doc.org/core-2.2.2/Enumerable.html">http://ruby-doc.org/core-2.2.2/Enumerable.html</a>
+  </section>
+</main>
