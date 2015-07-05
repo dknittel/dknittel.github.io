@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+<header>
+  <title>JavaScript vs. Ruby</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="your-stylesheet-link-here.css">
+</header>
+
+<main>
+  <h1>JavaScript vs. Ruby</h1>
+  <h4>7/5/2015</h4>
+  <hr>
+  <section>
+    <h4>Javascript Objects</h4>
+
+    <p>
+      Javascript objects are data structures that contain properties. There are three ways to create an entry into an object. The first is by putting it directly in the object such as:
+    </p>
+    <p>
+      var justin = {
+      age: 21
+    }
+    </p>
+    <p>
+      You can also do it outside of the object with either of the following code (assuming the friends object has already been created):  
+    </p>
+    <p>
+      justin[age] = 21
+    </p>
+    <p>
+      justin.age = 21
+    </p>
+    <p>
+      You can put a function within an object and call it. Here's an example:
+    </p>
+    <p>
+       justin.greeting = function() {
+       console.log("hello")
+     } 
+     justin.greeting(); //prints "hello"
+    </p>
+    <p>
+      Javascript objects are visually very similar to ruby hashes but there are a few key differences which we will see now.  
+    </p>
+    <h4>Ruby Hashes</h4>
+    <p>
+       Unlike Javascript objects which are collections of properties that point to other objects, ruby objects contain a hash of instance variables that refer to different objects. In Ruby, instance variables can only be accessed inside of the context of an object in a method call. In addition, hash values can only be created within the hash or through code like this:
+    </p>
+    <p>
+       justin[age] = 21 
+    </p>
+    <p>
+      Elements within a hash are referred to as key-value pairs. These key value pairs can be defined either with symbols or with the "rocket ship" notaion of =>. Here are examples of each:
+    </p>
+    <p>
+      justin = {
+      age => 21
+    }
+    </p>
+    <p>
+      justin = {
+      age: 21
+    }
+    </p>
+    <p>
+      Using the second style makes age a symbol, which can be accessed like this:
+    </p>
+    <p>
+      justin[:age]
+    </p>
+    <p>
+    Each language also has differnet built-in methods to access items in the hash or object. For example, each_key in Ruby allows you to loop through each key in the hash, passing the block to all of the keys. The delete function allows you to delete the key-value pair whose key matches the parameter of the function. has_key?(key) lets you know if the given hash has the key that is in the parameter. 
+    </p>
+    <p>
+      Javascript also has useful functions for its objects. For example, Object.create() creates a new object using the object and properties passed into the function. Object.getOwnPropertyNames() returns an array that has each of the names of the object's enumerable and non-enumerable properties.
+    </p>
+    <p>
+      Javascript objects and ruby hashes can both be used to store lists of entries with two elements for each entry. The primary differences involve how you define and access these elements. 
+    </p>
+    <h4>Sources:</h4>
+    <a href="http://stantona.github.io/blog/2012/12/12/a-tale-of-two-object-models-javascript-and-ruby/">http://stantona.github.io/blog/2012/12/12/a-tale-of-two-object-models-javascript-and-ruby/</a>
+    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object</a>
+     <!-- <img src="#"/> -->
+  </section>
+</main>
