@@ -65,13 +65,13 @@ div img {
   border-radius: 28px;
   font-family: Arial;
   color: #ffffff;
-  padding: 10px 20px 10px 20px;
+  padding: 10px 10px 10px 10px;
   text-decoration: none;
 
 	font-size: 20px;
-	position: absolute;
-	text-align: left;
-}
+	position: relative;
+	text-align: center;
+  }
 
 .bloglink:hover {
   background: #3cb0fd;
